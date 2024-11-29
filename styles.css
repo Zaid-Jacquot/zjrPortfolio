@@ -1,0 +1,242 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Body */
+body{
+    background: black;
+    color: #fff;
+
+}
+
+
+/* header */
+.tete{
+    position:fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(8, 8, 85);
+}
+
+/* logo */
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* NavBar */
+.navbar a{
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 25px ;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: rgb(8, 8, 85);
+    transition: 300ms ease-in-out;
+}
+
+/* home */
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0 ;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.home-content p{
+    font-size: 20px;
+}
+
+.home-ico a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 20px 30px 20px 0;
+}
+.home-ico .bx.bxl-facebook {
+    color: #007bff;
+    border-radius: 50%;
+    border: 5px solid #007bff
+}
+
+.home-ico .bx.bxl-whatsapp-square {
+    color: #12c748;
+    border-radius: 50%;
+    border: 5px solid #12c748;
+    
+}
+
+.home-ico .bx.bxl-facebook:hover{
+    background: #007bff;
+    color: #081b29;
+    box-shadow: 0 0 20px #007bff;
+}
+
+.home-ico .bx.bxl-whatsapp-square:hover{
+    background: #12c748;
+    color: #081b29;
+    box-shadow: 0 0 20px #12c748;
+}
+
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 20px;
+    background: rgb(8, 8, 85);
+    border-radius: 40px;
+    font-size: 16px;
+    color:#fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover{
+    background-color: #fff;
+    color: #007bff;
+}
+
+
+/* home_Img */
+.right-img img {
+    border-radius: 50%;
+    box-shadow: inset 0 0 1em gold, 0 0 2em  rgb(7, 7, 224);
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover;
+}
+
+/* About Section */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.img-about img{
+    border-radius: 50%;
+    box-shadow: inset 0 0 1em gold, 0 0 2em  rgb(7, 7, 224);
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover;
+    margin-left: 25%;
+}
+
+.text-about h2{
+    font-size: 60px;
+}
+.text-about p{
+    font-size: 20px;
+}
+
+/* ContactSection */
+.contact {
+    padding: 80px 10%;
+    background-color: #081b29;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+.contact form input::placeholder, 
+.contact form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact form button {
+    padding: 12px 28px;
+    background: rgb(8, 8, 85);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.contact form button:hover {
+    background-color: #fff;
+    color: #007bff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    transition: 300ms ease-in-out;
+}
+
+
